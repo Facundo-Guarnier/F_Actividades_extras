@@ -1,0 +1,14 @@
+$ sudo docker ps -a : Instancias corriendo  
+$ sudo docker rm <nombre> : Elimina las instancias  # Borra la instancia
+
+$ sudo docker images : Imagenes en el equipo
+$ sudo docker image rm <nombre de la img>:<tag de la img>   #Borra una imagen (antes tiene que estar borradas las instancias)
+
+
+
+Crear y ejecutar una imagen y su instancia
+1 - Hacer git clone en la pc y subir los archivos .py
+2 - Crear el Dockerfile y usar el mismo github
+3 - $ sudo docker build -t <nombre> .   # Genera una imagen
+4 - $ sudo docker run -i --name <nombre_personalizado> <nombre de la img>:<tag de la imagen>    # Genera una instancia
+    Ej:    sudo docker run -i --name pruebita prueba:latest
